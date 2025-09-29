@@ -1,0 +1,12 @@
+name: Terragrunt PR Checks
+on:
+  pull_request:
+    paths:
+      - '*/**/*.hcl'
+      - '**/*.tf'
+jobs:
+  terragrunt:
+    uses: ericknyatenya/platform-pipelines/.github/workflows/terragrunt_reusable.yml@main
+    with:
+      path-filter: '^(sandbox|dev|qa|prod)/'
+
