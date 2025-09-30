@@ -1,6 +1,6 @@
 locals {
   env    = "sandbox"
-  name   = "vpc-sbx2"
+  name   = "vpc-sbx3"
   tags   = { env = local.env }
   region = "us-east-1"
 }
